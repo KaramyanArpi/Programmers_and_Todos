@@ -3,7 +3,7 @@ from rest_framework import routers
 from .views import ProgrammerViewSet, programmer_paginate, programmer_todos
 
 router = routers.SimpleRouter()
-router.register(r'programmers', ProgrammerViewSet, basename="programmers")
+router.register(r'', ProgrammerViewSet, basename="programmers")
 
 urlpatterns = [
     path("", include(router.urls)),

@@ -3,7 +3,7 @@ from rest_framework import routers
 from .views import TodoViewSet, todo_paginate, todo_programmers
 
 router = routers.SimpleRouter()
-router.register(r'todos', TodoViewSet, basename="todos")
+router.register(r'', TodoViewSet, basename="todos")
 
 urlpatterns = [
     path("", include(router.urls)),

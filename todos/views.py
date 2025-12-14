@@ -2,7 +2,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import generics, viewsets, mixins
 from django.core.paginator import Paginator
-
 from .models import Todo
 from .serializers import TodoSerializer
 from programmers.serializers import ProgrammerSerializer
